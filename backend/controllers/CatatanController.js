@@ -42,7 +42,7 @@ export const updateCatatan = async (req, res) => {
     }
 };
 
-// DELETE USER
+
 export const deleteCatatan = async (req, res) => {
     try {
         const user = await Catatan.findOne({ where: { catatan_id: req.params.id } });
